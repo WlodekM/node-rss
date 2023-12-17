@@ -4,7 +4,7 @@
         <description><![CDATA[This is a sample RSS feed]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 17 Dec 2023 11:26:25 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 17 Dec 2023 11:49:46 GMT</lastBuildDate>
         <atom:link href="http://example.com" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <managingEditor><![CDATA[John Doe]]></managingEditor>
@@ -34,8 +34,10 @@
             <guid isPermaLink="false">test</guid>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
-            <guid isPermaLink="false">No title</guid>
+            <title><![CDATA[p-api test]]></title>
+            <description><![CDATA[description]]></description>
+            <link>nuh.uh</link>
+            <guid isPermaLink="false">test2</guid>
         </item>
     </channel>
 </rss>

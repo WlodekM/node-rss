@@ -71,10 +71,10 @@ export const website = () => {
         }
         const users = new JSONdb("users.json");
         const postData = req.body;
+        console.log(JSON.stringify(postData))
         if(!postData.title || !postData.description || !postData.link || !postData.guid || !postData.password) return res.send(400, "Bad request")
         if(!users.has(postData.username)) return res.send(400, "Bad username")
-        if(users.get(postData.username) != hashString(postData.pasword)) return res.send(400, "Bad password")
-        console.log("")
+        if(users.get(postData.username).password != hashString(postData.password)) return res.send(400, "Bad password")
         rssFeed.item({
             title: postData.title,
             description: postData.description,
