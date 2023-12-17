@@ -19,8 +19,8 @@ export const website = () => {
             return hash.digest("hex");
         }
     
+            console.log(`REQ: ${req.path} ${req.url}`);
         if (!req.path.startsWith("/api")) {
-            console.log(req.path);
             return next();
         }
     
@@ -64,12 +64,23 @@ export const website = () => {
         res.send(200, fs.readFileSync("public/rss.xml"), "xml");;
     });
     app.post("/Papi/post", (req, res) => {
+        function hashString(inputString) {
+            const hash = createHash("sha256");
+            hash.update(inputString);
+            return hash.digest("hex");
+        }
+        const users = new JSONdb("users.json");
+        const postData = req.body;
+        if(!postData.title || !postData.description || !postData.link || !postData.guid || !postData.password) return res.send(400, "Bad request")
+        if(!users.has(postData.username)) return res.send(400, "Bad username")
+        if(users.get(postData.username) != hashString(postData.pasword)) return res.send(400, "Bad password")
+        console.log("")
         rssFeed.item({
-            title: req.query.title,
-            description: req.query.description,
-            url: req.query.link,
-            guid: req.query.guid,
-            date: req.query.pubDate ? req.query.pubDate : null,
+            title: postData.title,
+            description: postData.description,
+            url: postData.link,
+            guid: postData.guid,
+            date: postData.pubDate ? postData.pubDate : null,
             pubDate: new Date()
         });
         const xml = rssFeed.xml({ indent: true });
