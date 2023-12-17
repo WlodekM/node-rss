@@ -6,6 +6,8 @@ import { website } from "./web.js";
 // Read the XML content from the file
 const xmlContent = fs.readFileSync("public/rss.xml", 'utf-8');
 
+export let rssFeed
+
 // Parse the XML content into a JavaScript object using xml2js
 parseString(xmlContent, (err, result) => {
   if (err) {
@@ -15,7 +17,7 @@ parseString(xmlContent, (err, result) => {
     const feedInfo = result.rss.channel[0];
 
     // Construct an RSS object based on the parsed data
-    const rssFeed = new RSS({
+   rssFeed = new RSS({
       title: feedInfo.title[0],
       description: feedInfo.description[0],
       feed_url: feedInfo.link[0],
@@ -33,7 +35,7 @@ parseString(xmlContent, (err, result) => {
       rssFeed.item({
         title: item.title[0],
         description: item.description[0],
-        url: item.link[0],
+        url: (item.link ? item.link[0] : null),
         guid: item.guid[0][0],
         date: (item.pubDate ? item.pubDate[0] : null),
       });
