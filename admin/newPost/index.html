@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS: New blog post</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // $(document).ready(() => {
+        //     // Validate form on submission
+        //     $('#form').submit(function(event) {
+        //         if (!this.checkValidity()) {
+        //             // If form is not valid, prevent submission
+        //             event.preventDefault();
+        //             event.stopPropagation();
+        //         }
+                
+        //         // Mark form controls as touched to show validation messages
+        //         $(this).addClass('was-validated');
+        //     });
+        // }); 
+    </script>
+</head>
+
+<body>
+
+<form action="/api/v2/post" method="post">
+    <input type="text" id="title" name="title" placeholder="Title"><br>
+    <input type="text" id="description" name="description" placeholder="Description"><br>
+    <input type="text" id="guid" name="guid" placeholder="ID"><br>
+    <textarea type="text" id="markdown" name="md">Markdown here...</textarea><br>
+    <hr>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="JhonDoe"><br>
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" placeholder="JhonDoe123"><br>
+    <input type="submit" value="Submit!">
+</form>
+
+</body>
+
+</html>

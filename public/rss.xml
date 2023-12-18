@@ -4,7 +4,7 @@
         <description><![CDATA[This is a sample RSS feed]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 17 Dec 2023 11:49:46 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Dec 2023 16:21:00 GMT</lastBuildDate>
         <atom:link href="http://example.com" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <managingEditor><![CDATA[John Doe]]></managingEditor>
@@ -37,7 +37,31 @@
             <title><![CDATA[p-api test]]></title>
             <description><![CDATA[description]]></description>
             <link>nuh.uh</link>
-            <guid isPermaLink="false">test2</guid>
+            <guid isPermaLink="true">nuh.uh</guid>
+        </item>
+        <item>
+            <title><![CDATA[test of webApp]]></title>
+            <description><![CDATA[test of webApp (desc)]]></description>
+            <link>http://localhostblog/webapp-test</link>
+            <guid isPermaLink="true">http://localhostblog/webapp-test</guid>
+        </item>
+        <item>
+            <title><![CDATA[test of webApp]]></title>
+            <description><![CDATA[test of webApp (desc)]]></description>
+            <link>http://localhostblog/webapp-test</link>
+            <guid isPermaLink="true">http://localhostblog/webapp-test</guid>
+        </item>
+        <item>
+            <title><![CDATA[test of webApp]]></title>
+            <description><![CDATA[test of webApp (desc)]]></description>
+            <link>http://localhostblog/webapp-test</link>
+            <guid isPermaLink="true">http://localhostblog/webapp-test</guid>
+        </item>
+        <item>
+            <title><![CDATA[test of webApp]]></title>
+            <description><![CDATA[test of webApp (desc)]]></description>
+            <link>http://localhostblog/webapp-test</link>
+            <guid isPermaLink="false">webapp-test</guid>
         </item>
     </channel>
 </rss>

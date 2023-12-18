@@ -10,6 +10,7 @@ export let rssFeed
 
 // Parse the XML content into a JavaScript object using xml2js
 parseString(xmlContent, (err, result) => {
+    //ANCHOR - parse rss
   if (err) {
     console.error('Error parsing XML:', err);
   } else {
