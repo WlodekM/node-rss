@@ -105,7 +105,7 @@ export const website = () => {
     app.get("/", function (req, res) {
         res.send("Hello World!");
     });
-    app.get("/admin/*", function (req, res) {
+    app.get("/admin*", function (req, res) {
         let filePath = req.path.slice(1)
         let stats = fs.statSync(filePath)
         if (stats.isDirectory()) filePath += "/index.html"
