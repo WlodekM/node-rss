@@ -90,7 +90,7 @@ export const website = () => {
         rssFeed.item({
             title: postData.title,
             description: postData.description,
-            url: `http://${req.hostname}blog/${postData.guid}`,
+            url: `http://${req.hostname}:${req.port}/blog/${postData.guid}`,
             guid: postData.guid,
             date: postData.pubDate ? postData.pubDate : null,
             pubDate: new Date()

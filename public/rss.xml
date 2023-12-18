@@ -45,23 +45,5 @@
             <link>http://localhostblog/webapp-test</link>
             <guid isPermaLink="true">http://localhostblog/webapp-test</guid>
         </item>
-        <item>
-            <title><![CDATA[test of webApp]]></title>
-            <description><![CDATA[test of webApp (desc)]]></description>
-            <link>http://localhostblog/webapp-test</link>
-            <guid isPermaLink="true">http://localhostblog/webapp-test</guid>
-        </item>
-        <item>
-            <title><![CDATA[test of webApp]]></title>
-            <description><![CDATA[test of webApp (desc)]]></description>
-            <link>http://localhostblog/webapp-test</link>
-            <guid isPermaLink="true">http://localhostblog/webapp-test</guid>
-        </item>
-        <item>
-            <title><![CDATA[test of webApp]]></title>
-            <description><![CDATA[test of webApp (desc)]]></description>
-            <link>http://localhostblog/webapp-test</link>
-            <guid isPermaLink="false">webapp-test</guid>
-        </item>
     </channel>
 </rss>
