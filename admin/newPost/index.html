@@ -26,15 +26,15 @@
 <body>
 
 <form action="/api/v2/post" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="JhonDoe"><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="JhonDoe123"><br>
+    <hr>
     <input type="text" id="title" name="title" placeholder="Title"><br>
     <input type="text" id="description" name="description" placeholder="Description"><br>
     <input type="text" id="guid" name="guid" placeholder="ID"><br>
     <textarea type="text" id="markdown" name="md">Markdown here...</textarea><br>
-    <hr>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" placeholder="JhonDoe"><br>
-    <label for="password">Password:</label>
-    <input type="text" id="password" name="password" placeholder="JhonDoe123"><br>
     <input type="submit" value="Submit!">
 </form>
 
