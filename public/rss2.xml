@@ -4,7 +4,7 @@
         <description><![CDATA[This is a sample RSS feed]]></description>
         <link>http://example.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 18 Dec 2023 16:44:12 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Dec 2023 17:05:36 GMT</lastBuildDate>
         <atom:link href="http://example.com" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <managingEditor><![CDATA[John Doe]]></managingEditor>
